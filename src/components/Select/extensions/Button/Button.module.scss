@@ -1,0 +1,17 @@
+@import "src/assets/styles/mixins";
+
+.select_button {
+  @include clear-button-styles;
+
+  font-size: 1.4rem;
+  width: 100%;
+  min-width: fit-content;
+  height: 4rem;
+  padding: 0.5rem;
+  border-bottom: 0.125em solid grey;
+
+  &:hover, &.hovered {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+}

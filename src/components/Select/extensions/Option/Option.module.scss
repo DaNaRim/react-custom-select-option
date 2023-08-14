@@ -1,0 +1,21 @@
+.option {
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  &.in_dropdown {
+    padding: 0.5rem 1rem;
+    border-bottom: 0.1em solid grey;
+
+    &:hover, &.hovered {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &.selected {
+      background-color: rgba(109, 218, 13, 0.47);
+    }
+
+    &:is(:last-child) {
+      border-bottom: none;
+    }
+  }
+}
